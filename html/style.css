@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper {
+    background: black;
+
+}
+
+.inner {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-family: Poppins;
+    padding: 35px 26px;
+    border: 1px solid rgba(128, 128, 128, 0.877);
+    border-radius: 27px;
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.card-title {
+    font-weight: 600;
+    z-index: 2;
+    position: relative;
+}
+
+.card-details {
+    padding-top: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.card-details ul li {
+    font-weight: 300;
+}
+
+.card-title {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ea7955;
+}
+
+.card-details ul li span {
+    margin: 2px 0;
+}
+
+.element {
+    display: inline-block;
+    width: 100px;
+}
+
+.describe {
+    color: rgba(128, 128, 128, 0.877);
+}
+
+.main-title {
+    color: wheat;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 30px;
+    font-family: Poppins;
+    background: black;
+
+}
+
+.card-bg {
+    height: 118px;
+    width: 118px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.card:hover .card-bg {
+    transform: scale(11);
+}
+
+.card:hover span.describe {
+    color: black;
+    font-weight: 500;
+}
+
+.card:hover span.element {
+    color: black;
+    font-weight: 500;
+}
+
+.card:hover hr {
+    color: black;
+    z-index: 2;
+    position: relative;
+
+}
+
+.card:hover .card-details ul li {
+    color: black;
+}
+
+
+.inner:nth-child(2n) .card .card_bg {
+    background-color: #3ecd5e;
+}
+
+.card:nth-child(3n) .card_bg {
+    background-color: #e44002;
+}
+
+.card:nth-child(4n) .card_bg {
+    background-color: #952aff;
+}
+
+.card:nth-child(5n) .card_bg {
+    background-color: #cd3e94;
+}
+
+.card:nth-child(6n) .card_bg {
+    background-color: #4c49ea;
+}
+
+.card a {
+        color: rgba(128, 128, 128, 0.877);
+        text-decoration: none;
+    }
+    .card:hover a {
+        color: black;
+      
+    }
+
+    #lab_social_icon_footer {
+      
+        background-color: #dedede;
+      }
+      
+      #lab_social_icon_footer a {
+        color: #fff;
+    }
+      
+      #lab_social_icon_footer .social:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+      }
+      
+      #lab_social_icon_footer .social {
+        -webkit-transform: scale(0.8);
+        /* Browser Variations: */
+        
+        -moz-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        -webkit-transition-duration: 0.5s;
+        -moz-transition-duration: 0.5s;
+        -o-transition-duration: 0.5s;
+      }
+      /*
+          Multicoloured Hover Variations
+      */
+      
+      #lab_social_icon_footer #social-fb:hover {
+        color: #3B5998;
+      }
+      
+      #lab_social_icon_footer #social-tw:hover {
+        color: #4099FF;
+      }
+      
+      #lab_social_icon_footer #social-gp:hover {
+        color: #d34836;
+      }
+      
+      #lab_social_icon_footer #social-em:hover {
+        color: #f39c12;
+      }
+
+      .text-center.center-block {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        background: black;
+    }
